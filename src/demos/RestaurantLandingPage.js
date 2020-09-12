@@ -10,6 +10,7 @@ import TabGrid from "components/cards/TabCardGrid.js";
 import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
 import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
+import SliderCard from "components/custom/ThreeColSlider.js";
 
 import chefIconImageSrc from "images/chef-icon.svg";
 import celebrationIconImageSrc from "images/celebration-icon.svg";
@@ -25,19 +26,19 @@ export default () => {
     <AnimationRevealPage>
       <Hero
         heading={<>Daily - Ontime - Fresh <HighlightedText>Grocery On Wheels.</HighlightedText></>}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        description="we bring fresh grocery on a truck right to your apartment every day at the same time, handpick what you want ."
+        imageSrc="https://i.ibb.co/GPg9DZ0/Untitled-design-1.png"
         imageCss={imageCss}
         imageDecoratorBlob={true}
-        primaryButtonText="Order Now"
-        watchVideoButtonText="Meet The Chefs"
       />
+    
       <MainFeature
-        subheading={<Subheading>Established Since 2014</Subheading>}
+        imageCss = 'max-width: 115%'
+        subheading={<Subheading></Subheading>}
         heading={
           <>
-            We've been serving for
-            <wbr /> <HighlightedText>over 5 years.</HighlightedText>
+             Truck in basement
+            <wbr /> <HighlightedText>same time every day</HighlightedText>
           </>
         }
         description={
@@ -51,9 +52,37 @@ export default () => {
         }
         buttonRounded={false}
         textOnLeft={false}
-        primaryButtonText="Latest Offers"
+        primaryButtonText="Know timings"
         imageSrc={
-          "https://images.unsplash.com/photo-1460306855393-0410f61241c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+          "https://i.ibb.co/FXkcn7Y/Untitled-design.png"
+        }
+        imageCss={imageCss}
+        imageDecoratorBlob={true}
+        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
+      />
+       <SliderCard />
+      <MainFeature
+        subheading={<Subheading></Subheading>}
+        heading={
+          <>
+             Fresh Grocery 
+            <wbr /> <HighlightedText>Hand Pick Yourself</HighlightedText>
+          </>
+        }
+        description={
+          <Description>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            <br />
+            <br />
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </Description>
+        }
+        buttonRounded={false}
+        textOnLeft={true}
+        primaryButtonText="Know timings"
+        imageSrc={
+          "https://i.ibb.co/GPg9DZ0/Untitled-design-1.png"
         }
         imageCss={imageCss}
         imageDecoratorBlob={true}
@@ -76,19 +105,19 @@ export default () => {
         cards={[
           {
             imageSrc: shopIconImageSrc,
-            title: "230+ Locations",
+            title: "8+ Locations",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
             url: "https://google.com"
           },
           {
             imageSrc: chefIconImageSrc,
-            title: "Professional Chefs",
+            title: "Top Quality Items",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
             url: "https://timerse.com"
           },
           {
             imageSrc: celebrationIconImageSrc,
-            title: "Birthday Catering",
+            title: "From Local Farmers",
             description: "Lorem ipsum donor amet siti ceali placeholder text",
             url: "https://reddit.com"
           }
@@ -97,40 +126,14 @@ export default () => {
         imageContainerCss={tw`p-2!`}
         imageCss={tw`w-20! h-20!`}
       />
-      <MainFeature2
-        subheading={<Subheading>A Reputed Brand</Subheading>}
-        heading={<>Why <HighlightedText>Choose Us ?</HighlightedText></>}
-        statistics={[
-          {
-            key: "Orders",
-            value: "94000+",
-          },
-          {
-            key: "Customers",
-            value: "11000+"
-          },
-          {
-            key: "Chefs",
-            value: "1500+"
-          }
-        ]}
-        primaryButtonText="Order Now"
-        primaryButtonUrl="https://order.now.com"
-        imageInsideDiv={false}
-        imageSrc="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEzNzI2fQ&auto=format&fit=crop&w=768&q=80"
-        imageCss={Object.assign(tw`bg-cover`, imageCss)}
-        imageContainerCss={tw`md:w-1/2 h-auto`}
-        imageDecoratorBlob={true}
-        imageDecoratorBlobCss={tw`left-1/2 md:w-32 md:h-32 -translate-x-1/2 opacity-25`}
-        textOnLeft={true}
-      />
+     
       <Testimonial
         subheading=""
-        heading={<>Customers <HighlightedText>Love Us.</HighlightedText></>}
+        heading={<>Our Trusted <HighlightedText>Suppliers.</HighlightedText></>}
       />
-      <DownloadApp
+      {/* <DownloadApp
         text={<>People around you are ordering delicious meals using the <HighlightedTextInverse>Treact App.</HighlightedTextInverse></>}
-      />
+      /> */}
       <Footer />
     </AnimationRevealPage>
   );
