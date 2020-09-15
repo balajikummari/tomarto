@@ -11,6 +11,7 @@ import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js"
 import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import SliderCard from "components/custom/ThreeColSlider.js";
+import TextLoop from "react-text-loop";
 
 import chefIconImageSrc from "images/chef-icon.svg";
 import celebrationIconImageSrc from "images/celebration-icon.svg";
@@ -22,11 +23,22 @@ export default () => {
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
+
+  const Heading1 = tw.h1`text-redPrimary-500 text-3xl md:text-5xl leading-snug max-w-3xl`;
+  const Heading2 = tw.h1`text-primary-500 text-3xl md:text-5xl leading-snug max-w-3xl`;
+ const Heading3 = tw.h1`font-black text-3xl md:text-5xl leading-snug max-w-3xl`;
+
+
   return (
     <AnimationRevealPage>
       <Hero
-        heading={<>Daily - Ontime - Fresh <HighlightedText>Grocery On Wheels.</HighlightedText></>}
-        description="we bring fresh grocery on a truck right to your apartment every day at the same time, handpick what you want ."
+        heading={<>      
+        <TextLoop interval={1800} springConfig={{ stiffness: 50, damping: 10 }}>
+        <Heading1>Daily</Heading1>
+        <Heading2>Fresh</Heading2>
+        <Heading3>On Time</Heading3>
+      </TextLoop> Grocery <HighlightedText>Market On Wheels.</HighlightedText></>}
+        description="We bring Fresh fruits, vegetables, grocery like oil, rice, staples on our smart truck to your apartment daily at a specific time, for you to shop, just like supermarket."
         imageSrc="https://i.ibb.co/GPg9DZ0/Untitled-design-1.png"
         imageCss={imageCss}
         imageDecoratorBlob={true}
