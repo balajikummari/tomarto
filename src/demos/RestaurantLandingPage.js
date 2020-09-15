@@ -20,7 +20,7 @@ import shopIconImageSrc from "images/shop-icon.svg";
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4  inline-block`;
-  const HighlightedTextM = tw.span`bg-primary-500 text-3xl text-gray-100 px-4  inline-block`;
+  const HighlightedTextM = tw.span`bg-primary-500 text-4xl text-gray-100 px-4  inline-block`;
 
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
@@ -39,14 +39,14 @@ export default () => {
         <Heading>Daily</Heading>
         <Heading>Fresh</Heading>
         <Heading>On Time</Heading>
-      </TextLoop> Grocery <HighlightedTextM>Supermarket to your basement.</HighlightedTextM></>}
+      </TextLoop> Grocery <HighlightedTextM>Supermarket that comes daily to your basement</HighlightedTextM></>}
         description="We bring Fresh fruits, vegetables, grocery like oil, rice, staples on our smart truck to your apartment daily at a specific time, for you to shop, just like supermarket."
         imageSrc="https://i.ibb.co/GPg9DZ0/Untitled-design-1.png"
         imageCss={imageCss}
         imageDecoratorBlob={true}
       />
     
-      <MainFeature
+      {/* <MainFeature
         imageCss = 'max-width: 115%'
         subheading={<Subheading></Subheading>}
         heading={
@@ -73,13 +73,13 @@ export default () => {
         imageCss={imageCss}
         imageDecoratorBlob={true}
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
-      />
+      /> */}
        <SliderCard />
       <MainFeature
         subheading={<Subheading></Subheading>}
         heading={
           <>
-             Fresh Grocery 
+             Remember the timings
             <wbr /> <HighlightedText>Hand Pick Yourself.</HighlightedText>
           </>
         }
@@ -94,7 +94,7 @@ export default () => {
         }
         buttonRounded={false}
         textOnLeft={true}
-        primaryButtonText="Know timings"
+        primaryButtonText="Know timings for your appartment"
         imageSrc={
           "https://i.ibb.co/GPg9DZ0/Untitled-design-1.png"
         }
