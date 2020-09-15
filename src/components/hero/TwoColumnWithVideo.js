@@ -72,6 +72,7 @@ const StyledModal = styled(ReactModalAdapter)`
 `;
 const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-primary-500`;
 
+
 export default (
   {
   heading = "Modern React Templates, Just For You",
@@ -87,7 +88,9 @@ export default (
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
+  const [text, settext] = useState(0);
 
+  const WA = "https://api.whatsapp.com/send?phone=918143762720&text="
   return (
     <>
       <Header />
@@ -98,9 +101,9 @@ export default (
             <Heading>{heading}</Heading>
             <Paragraph>{description}</Paragraph>
             <Actions>
-              <input type="text" placeholder="Select Appartment" /> 
-
-              <button>Know More</button>
+              <input type="text" onChange={(event) => settext(event.target.value)}    placeholder="Appartment Name" /> 
+              <a href={WA + "Hi Im From "+ text + " would like to know more about your service"}>
+              <button >Know More</button></a>
             </Actions>
           </LeftColumn>
           <RightColumn>

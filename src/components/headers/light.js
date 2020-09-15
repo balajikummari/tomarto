@@ -30,7 +30,7 @@ export const PrimaryLink = tw(NavLink)`
   lg:mx-0
   px-8 py-3 rounded bg-primary-500 text-gray-100
   hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline
-  border-b-0
+  border-b-4
 `;
 
 export const LogoLink = styled(NavLink)`
@@ -72,14 +72,16 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
+      {/* <NavLink href="/#">About</NavLink>
       <NavLink href="/#">Blog</NavLink>
       <NavLink href="/#">Pricing</NavLink>
       <NavLink href="/#">Contact Us</NavLink>
       <NavLink href="/#" tw="lg:ml-12!">
         Login
-      </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink>
+      </NavLink> */}
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="tel:+918143762720">call</PrimaryLink>
+
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="mailto:praveen@tomarto.com">Email</PrimaryLink>
     </NavLinks>
   ];
 

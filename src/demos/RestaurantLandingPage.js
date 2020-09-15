@@ -20,13 +20,15 @@ import shopIconImageSrc from "images/shop-icon.svg";
 export default () => {
   const Subheading = tw.span`tracking-wider text-sm font-medium`;
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4  inline-block`;
+  const HighlightedTextM = tw.span`bg-primary-500 text-3xl text-gray-100 px-4  inline-block`;
+
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
 
-  const Heading1 = tw.h1`text-redPrimary-500 text-3xl md:text-5xl leading-snug max-w-3xl`;
-  const Heading2 = tw.h1`text-primary-500 text-3xl md:text-5xl leading-snug max-w-3xl`;
- const Heading3 = tw.h1`font-black text-3xl md:text-5xl leading-snug max-w-3xl`;
+  const Heading = tw.h1`text-redPrimary-500 text-3xl md:text-5xl leading-snug max-w-3xl`;
+//   const Heading2 = tw.h1`text-primary-500 text-3xl md:text-5xl leading-snug max-w-3xl`;
+//  const Heading3 = tw.h1`font-black text-3xl md:text-5xl leading-snug max-w-3xl`;
 
 
   return (
@@ -34,10 +36,10 @@ export default () => {
       <Hero
         heading={<>      
         <TextLoop interval={1800} springConfig={{ stiffness: 50, damping: 10 }}>
-        <Heading1>Daily</Heading1>
-        <Heading2>Fresh</Heading2>
-        <Heading3>On Time</Heading3>
-      </TextLoop> Grocery <HighlightedText>Market On Wheels.</HighlightedText></>}
+        <Heading>Daily</Heading>
+        <Heading>Fresh</Heading>
+        <Heading>On Time</Heading>
+      </TextLoop> Grocery <HighlightedTextM>Supermarket to your basement.</HighlightedTextM></>}
         description="We bring Fresh fruits, vegetables, grocery like oil, rice, staples on our smart truck to your apartment daily at a specific time, for you to shop, just like supermarket."
         imageSrc="https://i.ibb.co/GPg9DZ0/Untitled-design-1.png"
         imageCss={imageCss}
@@ -50,7 +52,7 @@ export default () => {
         heading={
           <>
              Truck in basement
-            <wbr /> <HighlightedText>same time every day</HighlightedText>
+            <wbr /> <HighlightedText>Same Time Everyday.</HighlightedText>
           </>
         }
         description={
@@ -78,7 +80,7 @@ export default () => {
         heading={
           <>
              Fresh Grocery 
-            <wbr /> <HighlightedText>Hand Pick Yourself</HighlightedText>
+            <wbr /> <HighlightedText>Hand Pick Yourself.</HighlightedText>
           </>
         }
         description={
@@ -108,7 +110,7 @@ export default () => {
           </>
         }
       /> */}
-      <Features
+      {/* <Features
         heading={
           <>
             Amazing <HighlightedText>Services.</HighlightedText>
@@ -137,7 +139,7 @@ export default () => {
 
         imageContainerCss={tw`p-2!`}
         imageCss={tw`w-20! h-20!`}
-      />
+      /> */}
      
       <Testimonial
         subheading=""

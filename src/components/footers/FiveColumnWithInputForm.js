@@ -50,7 +50,7 @@ export default () => {
   return (
     <Container>
       <Content>
-        <SixColumns>
+        {/* <SixColumns>
           <Column>
             <ColumnHeading>Main</ColumnHeading>
             <LinkList>
@@ -119,7 +119,7 @@ export default () => {
               </LinkListItem>
             </LinkList>
           </Column>
-          <SubscribeNewsletterColumn>
+          {/* <SubscribeNewsletterColumn>
             <SubscribeNewsletterContainer>
               <ColumnHeading>Subscribe to our Newsletter</ColumnHeading>
               <SubscribeText>
@@ -130,8 +130,8 @@ export default () => {
                 <SubscribeButton type="submit">Subscribe</SubscribeButton>
               </SubscribeForm>
             </SubscribeNewsletterContainer>
-          </SubscribeNewsletterColumn>
-        </SixColumns>
+          </SubscribeNewsletterColumn> 
+        </SixColumns>  */}
         <Divider />
         <ThreeColRow>
           <LogoContainer>
