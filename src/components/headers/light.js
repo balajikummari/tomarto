@@ -79,9 +79,8 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       <NavLink href="/#" tw="lg:ml-12!">
         Login
       </NavLink> */}
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="tel:+918143762720">call</PrimaryLink>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="https://api.whatsapp.com/send?phone=918143762720&text=Hi%20Would%20like%20to%20know%20more%20about%20your%20service">Contact</PrimaryLink>
 
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="mailto:praveen@tomarto.com">Email</PrimaryLink>
     </NavLinks>
   ];
 
